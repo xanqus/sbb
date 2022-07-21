@@ -48,6 +48,7 @@ public class QuestionController {
         if(bindingResult.hasErrors()) {
             return "question_form";
         }
+
         this.questionService.create(questionForm.getSubject(), questionForm.getContent());
         return "redirect:/question/list";
     }
