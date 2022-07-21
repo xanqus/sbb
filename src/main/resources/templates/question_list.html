@@ -18,7 +18,7 @@
                 <span class="text-danger small ms-2"
                       th:if="${#lists.size(question.answerList) > 0}"
                       th:text="${#lists.size(question.answerList)}">
-                    </span>
+                </span>
             </td>
             <td th:text="${#temporals.format(question.createDate, 'yyyy-MM-dd HH:mm')}"></td>
         </tr>
